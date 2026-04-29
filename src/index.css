@@ -418,3 +418,110 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — TABLET (max-width: 1024px)
+   ═══════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .nav-desktop {
+    display: none !important;
+  }
+  .nav-mobile-toggle {
+    display: flex !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — MOBILE (max-width: 768px)
+   ═══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Nav */
+  .nav-desktop {
+    display: none !important;
+  }
+  .nav-mobile-toggle {
+    display: flex !important;
+  }
+
+  /* Sections */
+  .section-heading {
+    font-size: clamp(24px, 7vw, 36px) !important;
+  }
+  .section-subheading {
+    font-size: 15px !important;
+  }
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  /* Glass card padding */
+  .glass-card {
+    padding: 20px 16px;
+  }
+
+  /* Buttons */
+  .btn-saffron,
+  .btn-gold-outline {
+    padding: 12px 24px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  /* Ornament divider */
+  .ornament-divider::before,
+  .ornament-divider::after {
+    max-width: 60px;
+  }
+
+  /* Floating decorations — smaller/hidden on mobile */
+  .floating-ingredient {
+    opacity: 0.15 !important;
+    width: 40px !important;
+  }
+
+  /* Steam wisps — smaller */
+  .steam-wisp {
+    width: 35px;
+    height: 50px;
+  }
+
+  /* Inputs */
+  .input-heritage {
+    font-size: 16px; /* prevent iOS zoom on focus */
+  }
+
+  /* Float labels */
+  .float-label label {
+    font-size: 13px;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (max-width: 480px)
+   ═══════════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: clamp(22px, 8vw, 30px) !important;
+  }
+
+  .btn-saffron,
+  .btn-gold-outline {
+    padding: 11px 20px;
+    font-size: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .glass-card {
+    border-radius: 12px;
+  }
+
+  /* Marquee speed adjustment for small screens */
+  .marquee-track {
+    animation-duration: 30s;
+  }
+  .marquee-reverse {
+    animation-duration: 25s;
+  }
+}

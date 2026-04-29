@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SmokeCanvas from './components/SmokeCanvas';
+import InstallPrompt from './components/InstallPrompt';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PhotosPage from './pages/PhotosPage';
@@ -13,6 +14,7 @@ export default function App() {
     <BrowserRouter>
       {/* Smoke particles canvas — global, follows mouse on food images */}
       <SmokeCanvas />
+      <InstallPrompt />
 
       <Routes>
         <Route path="/" element={<HomePage />} />

@@ -74,7 +74,7 @@ export default function About() {
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
         <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '64px', alignItems: 'center' }}>
           {/* Left — Image collage with parallax */}
-          <div style={{ position: 'relative', height: 'clamp(400px, 50vw, 580px)' }}>
+          <div style={{ position: 'relative', height: 'clamp(300px, 50vw, 580px)', minHeight: '300px' }}>
             <motion.div style={{ y: y1, position: 'absolute', top: 0, left: 0, width: '55%', height: '58%', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.5)' }}>
               <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant ambience" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
             </motion.div>

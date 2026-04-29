@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const quickLinks = [
-  { label: 'Home', href: '/#home' },
-  { label: 'About Us', href: '/#about' },
-  { label: 'Menu', href: '/#menu' },
-  { label: 'Cuisines', href: '/#cuisines' },
-  { label: 'Gallery', href: '/#gallery' },
+  { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Photos', href: '/photos' },
+  { label: 'Awards', href: '/awards' },
+  { label: 'Contact Us', href: '/contact' },
   { label: 'Book a Table', href: '/book' },
 ];
 
@@ -119,11 +120,11 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {quickLinks.map((l) => (
                 <li key={l.label}>
-                  <a href={l.href} onClick={(e) => { e.preventDefault(); scrollTo(l.href); }}
+                  <Link to={l.href}
                     style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--text-muted)', transition: 'all 0.3s', display: 'inline-block' }}
                     onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--saffron)'; e.currentTarget.style.paddingLeft = '6px'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.paddingLeft = '0'; }}
-                  >{l.label}</a>
+                  >{l.label}</Link>
                 </li>
               ))}
             </ul>
