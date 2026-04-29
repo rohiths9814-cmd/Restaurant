@@ -116,6 +116,7 @@ export default function Hero() {
           <motion.img
             src="/assets/hero-dish.png"
             alt="Signature fusion dish"
+            className="smoke-trigger"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 1 }}

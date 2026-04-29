@@ -93,6 +93,7 @@ export default function SignatureDishes() {
                 }}
               >
                 <img src={dish.image} alt={dish.name}
+                  className="smoke-trigger"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s' }}
                   loading="lazy"
                   onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.08)'; }}
