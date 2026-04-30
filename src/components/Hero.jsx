@@ -82,7 +82,7 @@ export default function Hero() {
         }} />
 
       {/* Center content */}
-      <div style={{ position: 'relative', zIndex: 10, textAlign: 'center', padding: '0 24px', maxWidth: '900px' }}>
+      <div style={{ position: 'relative', zIndex: 10, textAlign: 'center', padding: '0 24px', maxWidth: '900px', paddingTop: '80px' }}>
         {/* Since badge */}
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
@@ -90,20 +90,19 @@ export default function Hero() {
           transition={{ delay: 0.2, type: 'spring', stiffness: 200, damping: 15 }}
           style={{
             display: 'inline-flex', alignItems: 'center', gap: '8px',
-            padding: 'clamp(6px, 1.5vw, 8px) clamp(14px, 3vw, 20px)', borderRadius: '100px',
+            padding: '8px 20px', borderRadius: '100px',
             border: '1px solid rgba(232,160,32,0.3)',
             background: 'rgba(232,160,32,0.06)',
-            marginBottom: 'clamp(16px, 4vw, 28px)',
-            marginTop: 'clamp(60px, 10vw, 0px)',
+            marginBottom: '24px',
           }}
         >
-          <span style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(9px, 2vw, 11px)', letterSpacing: 'clamp(2px, 0.5vw, 3px)', color: 'var(--saffron)', textTransform: 'uppercase', fontWeight: 600 }}>
+          <span style={{ fontFamily: 'var(--font-body)', fontSize: '11px', letterSpacing: '3px', color: 'var(--saffron)', textTransform: 'uppercase', fontWeight: 600 }}>
             ✦ Since 2002 ✦
           </span>
         </motion.div>
 
-        {/* Main hero dish image */}
-        <div style={{ position: 'relative', display: 'inline-block', marginBottom: '32px' }}>
+        {/* Main hero dish image — properly sized and positioned */}
+        <div style={{ position: 'relative', display: 'inline-block', marginBottom: '28px' }}>
           {/* Golden glow halo */}
           <div style={{
             position: 'absolute', top: '50%', left: '50%',
@@ -122,7 +121,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 1 }}
             style={{
-              width: 'min(350px, 70vw)',
+              width: 'min(300px, 55vw)',
               borderRadius: '16px',
               animation: 'dishBob 3.5s ease-in-out infinite',
               position: 'relative',

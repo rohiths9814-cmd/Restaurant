@@ -142,17 +142,21 @@ export default function Navbar() {
 
         {/* Center Logo */}
         <Link to="/" style={{
-          display: 'flex', flexDirection: 'column', alignItems: 'center',
-          textDecoration: 'none', flexShrink: 0, padding: '0 20px',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          textDecoration: 'none', flexShrink: 0, padding: '0 16px',
         }}>
-          <span style={{
-            fontFamily: 'var(--font-display)', fontSize: '26px', fontWeight: 700,
-            color: 'var(--saffron)', letterSpacing: '4px', lineHeight: 1,
-          }}>RASIKAS</span>
-          <span style={{
-            fontFamily: 'var(--font-sub)', fontSize: '8px', letterSpacing: '5px',
-            color: 'var(--text-secondary)', textTransform: 'uppercase', fontStyle: 'italic',
-          }}>Grand Fusion</span>
+          <img
+            src="/assets/logo.png"
+            alt="Rasikas Grand Fusion"
+            style={{
+              width: scrolled ? '44px' : '56px',
+              height: scrolled ? '44px' : '56px',
+              borderRadius: '50%',
+              objectFit: 'cover',
+              transition: 'all 0.4s ease',
+              filter: 'drop-shadow(0 2px 8px rgba(232,160,32,0.2))',
+            }}
+          />
         </Link>
 
         {/* Right links — desktop */}
