@@ -90,13 +90,14 @@ export default function Hero() {
           transition={{ delay: 0.2, type: 'spring', stiffness: 200, damping: 15 }}
           style={{
             display: 'inline-flex', alignItems: 'center', gap: '8px',
-            padding: '8px 20px', borderRadius: '100px',
+            padding: 'clamp(6px, 1.5vw, 8px) clamp(14px, 3vw, 20px)', borderRadius: '100px',
             border: '1px solid rgba(232,160,32,0.3)',
             background: 'rgba(232,160,32,0.06)',
-            marginBottom: '28px',
+            marginBottom: 'clamp(16px, 4vw, 28px)',
+            marginTop: 'clamp(60px, 10vw, 0px)',
           }}
         >
-          <span style={{ fontFamily: 'var(--font-body)', fontSize: '11px', letterSpacing: '3px', color: 'var(--saffron)', textTransform: 'uppercase', fontWeight: 600 }}>
+          <span style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(9px, 2vw, 11px)', letterSpacing: 'clamp(2px, 0.5vw, 3px)', color: 'var(--saffron)', textTransform: 'uppercase', fontWeight: 600 }}>
             ✦ Since 2002 ✦
           </span>
         </motion.div>

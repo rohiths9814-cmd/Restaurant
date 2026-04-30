@@ -7,6 +7,7 @@ import PhotosPage from './pages/PhotosPage';
 import VideoPage from './pages/VideoPage';
 import AwardsPage from './pages/AwardsPage';
 import ContactPage from './pages/ContactPage';
+import MenuPage from './pages/MenuPage';
 import BookingPage from './components/BookingPage';
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/video" element={<VideoPage />} />
         <Route path="/awards" element={<AwardsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/menu" element={<MenuPage />} />
         <Route path="/book" element={<BookingPage />} />
       </Routes>
     </BrowserRouter>
